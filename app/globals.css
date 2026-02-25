@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 30% 6%;
+  --foreground: 180 15% 92%;
+  --card: 220 20% 10%;
+  --card-foreground: 180 15% 92%;
+  --primary: 178 97% 49%;
+  --primary-foreground: 220 30% 6%;
+  --border: 214 25% 20%;
+  --muted: 217 20% 15%;
+  --muted-foreground: 180 10% 70%;
+}
+
+body {
+  @apply bg-background text-foreground font-mono;
+  background-image: radial-gradient(circle at top, rgba(6, 182, 212, 0.08), transparent 45%);
+  min-height: 100vh;
+}
+
+.wallet-adapter-button {
+  @apply !bg-cyan-500 !text-black !rounded-md !font-semibold;
+}
+
+.wallet-adapter-button-trigger {
+  @apply !bg-cyan-500 !text-black;
+}
